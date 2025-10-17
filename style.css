@@ -7,6 +7,9 @@
 body {
     background-color: rgb(249, 249, 249);
 }
+body.oscuro{
+    background-color: rgb(31, 27, 42);
+}
 
 header {
     /* display: flex; */
@@ -17,8 +20,20 @@ header {
     color: rgb(255, 255, 255);
 
 }
+header.oscuro{
+    background-color: rgb(19, 22, 66);
+    color: pink;
+}
+header {
+    /* display: flex; */
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(255, 178, 191);
+    padding: 20px;
+    color: rgb(255, 255, 255);
 
-header button {
+}
+header button{
     margin-top: 10px;
     background-color: rgb(255, 255, 255);
     border-radius: 6px;
@@ -36,59 +51,65 @@ section {
     border-radius: 7px;
     box-shadow: 3px 3px 10px 3px rgba(128, 128, 128, 0.389);
 }
-
-.general {
+.general.oscuro{
+    background-color: rgb(50, 50, 129);
+}
+.general .descripcion h2.oscuro, form .contacto h2.oscuro{
+    color: rgb(255, 170, 170);
+}
+.general .descripcion p{
+    color: rgb(0, 0, 0);
+}
+.general .descripcion p.oscuro{
+    color: white;
+}
+.general{
     padding: 30px;
 }
-
-.general .descripcion {
+.general .descripcion{
     margin-bottom: 15px;
 }
 
-
-.general .descripcion h2 {
+.general .descripcion h2{
     color: rgb(79, 79, 79);
     margin-bottom: 15px;
 
 }
 
 
-.general .servicios {
+.general .servicios{
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
-
+    
 }
-
-.general .servicios .serv {
+.general .servicios .serv{
     background-color: rgb(241, 241, 241);
     padding: 8px;
     margin: 5px;
     border-radius: 8px;
     flex: 1;
 }
-
-section form .contacto {
+section form .contacto{
 
     margin-top: 10px;
     display: flex;
     flex-direction: column;
 }
-
-.contacto h2 {
+.contacto h2{
     color: rgb(79, 79, 79);
 }
 
-.contacto input {
+.contacto input{
     margin-top: 10px;
     border: 1px solid rgb(255, 175, 189);
     padding: 8px;
     border-radius: 5px;
 }
-
-.contacto #enviar {
+.contacto #enviar{
     background-color: rgb(213, 213, 213);
     color: black;
     font-size: 16px;
     border: none;
 }
+
